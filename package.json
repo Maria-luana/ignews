@@ -6,14 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stripe": "stripe-cli/stripe.exe listen  --forward-to localhost:3000/api/webhooks"
   },
   "dependencies": {
+    "@prismicio/client": "5.1.1",
     "@stripe/stripe-js": "^1.29.0",
     "axios": "^0.27.2",
     "faunadb": "^4.5.4",
     "next": "12.1.5",
     "next-auth": "^4.3.4",
+    "prismic-dom": "^2.2.7",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@types/next-auth": "^3.15.0",
     "@types/node": "^17.0.25",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "^18.0.6",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",

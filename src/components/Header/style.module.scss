@@ -15,17 +15,14 @@
         margin-left: 5rem;
         height: 5rem;
         list-style: none;
-        li{
+        a{
             display: inline-block;
             position: relative;
             line-height: 5rem;
             padding: 0 0.5rem;
             transition:  color .2s;
             color: var(--gray-300);
-            a{
-                display: inline-block;
-            }
-            & + li{
+            & + a{
                 margin-left: 2rem;
             }
             &:hover{
